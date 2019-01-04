@@ -40,6 +40,14 @@ steps:
 
 - task: PublishBuildArtifacts@1
 
+- task: AzureRmWebAppDeployment@3
+  inputs:
+    azureSubscription: '80f53a47-2930-4729-96aa-ce5c8268fa27'
+    WebAppName: 'bigdamnheroes'
+    Package: '$(System.DefaultWorkingDirectory)'
+    GenerateWebConfig: true
+    WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'
+
 # Will need to run unit test using mocha and chai, azure agent can not open chrome. 
 # - script: ng test
 #   displayName: 'Unit Test'

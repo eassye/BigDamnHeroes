@@ -26,17 +26,19 @@ steps:
 
 - script: |
     ls '$(System.DefaultWorkingDirectory)'
-    ls '$(System.DefaultWorkingDirectory)/..'
+    ls '$(System.DefaultWorkingDirectory)/a'
+    ls '$(System.DefaultWorkingDirectory)/b'
+    ls '$(System.DefaultWorkingDirectory)/s'
   displayName: 'Where am I'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/*'
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: '$(System.DefaultWorkingDirectory)/*'
 
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/*'
-    includeRootFolder: false
+# - task: ArchiveFiles@2
+#   inputs:
+#     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/*'
+#     includeRootFolder: false
 
 # Will need to run unit test using mocha and chai, azure agent can not open chrome. 
 # - script: ng test

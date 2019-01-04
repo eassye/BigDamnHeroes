@@ -42,9 +42,9 @@ steps:
 
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: 'ServicePlanea40d66c-8595 (Standard: 1 Small)'
+    azureSubscription: '80f53a47-2930-4729-96aa-ce5c8268fa27'
     WebAppName: 'bigdamnheroes'
-    Package: '$(System.DefaultWorkingDirectory)'
+    Package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     GenerateWebConfig: true
     WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'
 

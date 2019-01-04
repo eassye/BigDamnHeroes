@@ -27,9 +27,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'drop' 
-    publishLocation: 'filePath'
-    targetPath: 'D:\a\r1\a\**\'
+    artifactName: 'drop'
 
 # Will need to run unit test using mocha and chai, azure agent can not open chrome. 
 # - script: ng test

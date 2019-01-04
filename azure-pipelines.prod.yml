@@ -24,14 +24,14 @@ steps:
 - script: ng lint
   displayName: 'Lint Validation'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/*'
-
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/*'
     includeRootFolder: false
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/*'
 
 # Will need to run unit test using mocha and chai, azure agent can not open chrome. 
 # - script: ng test

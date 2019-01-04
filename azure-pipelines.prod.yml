@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- dev
+- master
 
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -24,6 +24,7 @@ steps:
 - script: ng lint
   displayName: 'Lint Validation'
 
+#adding fake
 # Will need to run unit test using mocha and chai, azure agent can not open chrome. 
 # - script: ng test
 #   displayName: 'Unit Test'

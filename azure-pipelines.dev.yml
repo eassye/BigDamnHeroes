@@ -42,7 +42,7 @@ steps:
 
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: '80f53a47-2930-4729-96aa-ce5c8268fa27'
+    azureSubscription: 'ServicePlanea40d66c-8595 (Standard: 1 Small)'
     WebAppName: 'bigdamnheroes'
     Package: '$(System.DefaultWorkingDirectory)'
     GenerateWebConfig: true

@@ -24,7 +24,8 @@ steps:
 - script: ng lint
   displayName: 'Lint Validation'
 
-#adding fake
+- task: PublishBuildArtifacts@1
+
 # Will need to run unit test using mocha and chai, azure agent can not open chrome. 
 # - script: ng test
 #   displayName: 'Unit Test'

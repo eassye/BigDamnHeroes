@@ -26,7 +26,7 @@ steps:
 
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: 'Free Trial (80f53a47-2930-4729-96aa-ce5c8268fa27)'
+    azureSubscription: '80f53a47-2930-4729-96aa-ce5c8268fa27'
     WebAppName: 'BigDamnHeroes'
     Package: '$(System.DefaultWorkingDirectory)'
     GenerateWebConfig: true

@@ -24,7 +24,10 @@ steps:
 - script: ng lint
   displayName: 'Lint Validation'
 
-- script: '$(System.DefaultWorkingDirectory)/dist/BigDamnHeroes'
+- script: |
+    ls '$(System.DefaultWorkingDirectory)'
+    ls '$(System.DefaultWorkingDirectory)/dist/'
+    ls '$(System.DefaultWorkingDirectory)/dist/BigDamnHeroes'
   displayName: 'Where am I'
 
 - task: ArchiveFiles@2

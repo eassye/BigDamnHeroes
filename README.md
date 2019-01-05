@@ -1,6 +1,12 @@
 # BigDamnHeroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+## Build Status
+
+### BigDamnHeroes.Dev
+[![Build Status](https://dev.azure.com/BigDamnHeroes/BigDamnHeroes/_apis/build/status/BigDamnHeroes.Dev?branchName=dev)](https://dev.azure.com/BigDamnHeroes/BigDamnHeroes/_build/latest?definitionId=2?branchName=dev)
+
+### BigDamnHeroes.Prod
+[![Build Status](https://dev.azure.com/BigDamnHeroes/BigDamnHeroes/_apis/build/status/BigDamnHeroes.Prod?branchName=master)](https://dev.azure.com/BigDamnHeroes/BigDamnHeroes/_build/latest?definitionId=1?branchName=master)
 
 ## Development server
 

@@ -24,9 +24,12 @@ steps:
 - script: ng lint
   displayName: 'Lint Validation'
 
+  - script: '$(System.DefaultWorkingDirectory)/dist/BigDamnHeroes'
+  displayName: 'Where am I'
+
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist/BigDamnHeroes'
     includeRootFolder: false
 
 - task: PublishBuildArtifacts@1

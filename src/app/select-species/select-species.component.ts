@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SelectSpeciesComponent implements OnInit {
 
   constructor() { }
+  list = this.speciesList();
 
   ngOnInit() {
+  
   }
 
+  speciesList(){
+    return ["Human", "Eldar", "Orks"];
+  }
 }

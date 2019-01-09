@@ -19,7 +19,7 @@ export class SpeciesComponent implements OnInit {
     });
   }
 
-  speciesList(){
+  speciesList() {
     return this._speciesService.getSpecies().subscribe((data) => {
       return data;
     });

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SpeciesService } from "../../services/species.service";
+import { SpeciesService } from '../../services/species.service';
 
 @Component({
   selector: 'app-species',

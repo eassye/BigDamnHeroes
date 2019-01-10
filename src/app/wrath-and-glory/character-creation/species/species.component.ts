@@ -8,19 +8,18 @@ import { SpeciesService } from '../../services/species.service';
 })
 export class SpeciesComponent implements OnInit {
 
-  species: Object;
+  species: String;
 
   constructor(private _speciesService: SpeciesService) { }
 
   ngOnInit() {
-    this._speciesService.getSpecies().subscribe((data) => {
-      this.species = data;
-      console.log(this.species);
-    });
+    this.speciesList();
   }
 
   speciesList() {
     return this._speciesService.getSpecies().subscribe((data) => {
+      console.log("DATA: ", data);
+      this.species = data[0].name;
       return data;
     });
   }

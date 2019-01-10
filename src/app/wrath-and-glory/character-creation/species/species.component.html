@@ -1,5 +1,7 @@
 <ul *ngIf="species">
   <li *ngFor="let specie of species.data">
-    <p>{{ specie.first_name }}  {{ specie.last_name }}</p>
+    {{ specie.name }}
   </li>
 </ul>
+
+<p>{{ species }}</p>

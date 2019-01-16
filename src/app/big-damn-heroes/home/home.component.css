@@ -1,0 +1,28 @@
+.container-fluid{
+    background-color:black;
+    position: absolute;
+    height: 80%;
+    width: 50%;
+    top: 15%;
+    background-size:contain;
+    overflow: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.home-page-heroes-image{
+    position: relative;
+}
+
+.begin-your-adventure-button{
+    position: relative;
+    left: 40%;
+    white-space: normal;
+    top: 80%;
+}
+

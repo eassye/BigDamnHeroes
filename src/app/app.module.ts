@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { SpeciesComponent } from './wrath-and-glory/character-creation/species/species.component';
 import { HomeComponent } from './big-damn-heroes/home/home.component';
+import { SelectGameComponent } from './big-damn-heroes/select-game/select-game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpeciesComponent,
-    HomeComponent
+    HomeComponent,
+    SelectGameComponent
   ],
   imports: [
     BrowserModule,
